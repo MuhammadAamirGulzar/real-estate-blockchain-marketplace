@@ -1,0 +1,20 @@
+{
+  "name": "rwachain-blockchain",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "test:verbose": "forge test -vvv",
+    "test:gas": "forge test --gas-report",
+    "deploy": "bash script/deploy-all.sh",
+    "deploy:windows": "powershell .\\script\\deploy-all.ps1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "ethers": "^6.9.0"
+  }
+}

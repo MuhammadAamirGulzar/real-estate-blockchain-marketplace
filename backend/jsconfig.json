@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    /**
+     * Module Resolution
+     * Enables @ path alias for cleaner imports
+     */
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+
+    /**
+     * JSX Configuration
+     * Uses React automatic JSX transform
+     */
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+
+    /**
+     * Module Settings
+     * ESNext for modern JavaScript features
+     */
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2020",
+    "lib": ["es2020", "dom", "dom.iterable"],
+
+    /**
+     * Compiler Options
+     * Balance between type checking and flexibility
+     */
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+
+    /**
+     * Strict Mode (disabled for flexibility)
+     * Can be enabled for stricter type checking
+     */
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+
+    /**
+     * Output Settings
+     * No emit - JS files are used directly
+     */
+    "noEmit": true
+  },
+
+  "include": [
+    "**/*.js",
+    "controllers/**/*",
+    "routes/**/*",
+    "services/**/*",
+    "middleware/**/*",
+    "config/**/*",
+    "db/**/*"
+  ],
+  "exclude": ["node_modules", "dist", "build"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}

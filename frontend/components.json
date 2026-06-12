@@ -1,0 +1,63 @@
+{
+  /**
+   * Shadcn/ui Configuration
+   *
+   * Manages component generation and styling
+   * Ensures consistency across generated components
+   */
+
+  /**
+   * Schema Version
+   * Validates configuration against Shadcn schema
+   */
+  "$schema": "https://ui.shadcn.com/schema.json",
+
+  /**
+   * Design System Style
+   * New York style - Clean, modern design system
+   */
+  "style": "new-york",
+
+  /**
+   * React Server Components
+   * Disabled for client-side only rendering
+   */
+  "rsc": false,
+
+  /**
+   * TypeScript Support
+   * Disabled - Using JSX instead
+   * Can be enabled for type safety
+   */
+  "tsx": false,
+
+  /**
+   * Tailwind CSS Configuration
+   * Points to tailwind.config.js for styling
+   */
+  "tailwind": {
+    "config": "tailwind.config.js",
+    "css": "src/index.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+
+  /**
+   * Module Aliases
+   * Defines import paths for components and utilities
+   */
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+
+  /**
+   * Icon Library
+   * Lucide for consistent, modern icons
+   */
+  "iconLibrary": "lucide"
+}

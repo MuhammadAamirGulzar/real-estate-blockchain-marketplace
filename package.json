@@ -1,0 +1,32 @@
+{
+  "name": "rwachain",
+  "description": "Real World Asset Tokenization Platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:all": "cd frontend && npm install && cd ../backend && npm install && cd ../blockchain && npm install && cd ..",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:blockchain": "cd blockchain && forge build",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm start",
+    "build:blockchain": "cd blockchain && forge build",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test",
+    "test:blockchain": "cd blockchain && forge test",
+    "db:migrate": "cd backend && npm run db:migrate",
+    "db:seed": "cd backend && npm run db:seed"
+  },
+  "keywords": [
+    "rwa",
+    "tokenization",
+    "blockchain",
+    "real-world-assets",
+    "property"
+  ],
+  "engines": {
+    "node": "^18.0.0",
+    "npm": "^9.0.0"
+  }
+}

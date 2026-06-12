@@ -1,0 +1,89 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    profiles:
+      - docker-db
+    environment:
+      POSTGRES_DB: rwachain_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d rwachain_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  blockchain:
+    image: ghcr.io/foundry-rs/foundry:stable
+    profiles:
+      - docker-chain
+    entrypoint: ["anvil"]
+    command:
+      [
+        "--host",
+        "0.0.0.0",
+        "--chain-id",
+        "31337",
+        "--state",
+        "/state",
+        "--state-interval",
+        "10",
+      ]
+    ports:
+      - "8545:8545"
+    volumes:
+      - ./blockchain/anvil-state:/state
+
+  backend:
+    build:
+      context: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      NODE_ENV: development
+      DATABASE_URL: postgresql://postgres:12345@host.docker.internal:5432/rwachain_db
+      RPC_URL: http://host.docker.internal:8545
+      LOCAL_RPC_URL: http://host.docker.internal:8545
+      NETWORK: local
+      CHAIN_ID: "31337"
+      FRONTEND_URL: http://localhost:5173
+      CHOKIDAR_USEPOLLING: "true"
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend:/app
+      - backend_node_modules:/app/node_modules
+      - ./backend/uploads:/app/uploads
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: npm run dev
+
+  frontend:
+    build:
+      context: ./frontend
+    env_file:
+      - ./frontend/.env
+    environment:
+      VITE_API_URL: http://localhost:3001/api
+      VITE_WS_URL: ws://localhost:3001
+      VITE_RPC_URL: http://localhost:8545
+      VITE_CHAIN_ID: "31337"
+      CHOKIDAR_USEPOLLING: "true"
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - frontend_node_modules:/app/node_modules
+    depends_on:
+      backend:
+        condition: service_started
+    command: npm run dev -- --host 0.0.0.0 --port 5173
+
+volumes:
+  postgres_data:
+  backend_node_modules:
+  frontend_node_modules:

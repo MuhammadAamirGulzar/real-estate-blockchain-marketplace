@@ -1,0 +1,28 @@
+{
+  "31337": {
+    "RoleManager": "0x4c5859f0f772848b2d91f1d83e2fe57935348029",
+    "KYCRegistry": "0x5f3f1dbd7b74c6b46e8c44f98792a1daf8d69154",
+    "AssetRegistry": "0x82e01223d51eb87e16a03e24687edf0f294da6f1",
+    "PropertyNFT": "0x7969c5ed335650692bc04293b07f5bf2e7a673c0",
+    "RWAToken": "0xc351628eb244ec633d5f21fbd6621e1a683b1181",
+    "InvestmentManager": "0xcbeaf3bde82155f56486fb5a1072cb8baaf547cc",
+    "SecondaryMarket": "0xb0d4afd8879ed9f52b28595d31b441d079b2ca07",
+    "RevenueDistributor": "0x922d6956c99e12dfeb3224dea977d0939758a1fe",
+    "PriceOracle": "0x1fa02b2d6a771842690194cf62d91bdd92bfe28d",
+    "PaymentEscrow": "0x04c89607413713ec9775e14b954286519d836fef",
+    "MultiTokenPayment": "0x21df544947ba3e8b3c32561399e88b52dc8b2823"
+  },
+  "11155111": {
+    "RoleManager": "",
+    "KYCRegistry": "",
+    "AssetRegistry": "",
+    "PropertyNFT": "",
+    "RWAToken": "",
+    "InvestmentManager": "",
+    "SecondaryMarket": "",
+    "RevenueDistributor": "",
+    "PriceOracle": "",
+    "PaymentEscrow": "",
+    "MultiTokenPayment": ""
+  }
+}
