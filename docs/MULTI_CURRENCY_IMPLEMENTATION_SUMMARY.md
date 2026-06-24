@@ -329,7 +329,7 @@ PLAID_SECRET=your_secret
 # Email
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=noreply@rwachain.com
+SMTP_USER=noreply@estatechain-marketplace.com
 SMTP_PASS=your_password
 ```
 

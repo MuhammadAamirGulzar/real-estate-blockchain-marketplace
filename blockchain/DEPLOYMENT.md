@@ -1,4 +1,4 @@
-# RWAChain Blockchain Deployment Guide
+# EstateChain Marketplace Blockchain Deployment Guide
 
 Complete deployment and testing guide for the RWA Tokenization Platform smart contracts.
 
@@ -91,7 +91,7 @@ cd blockchain
 **Expected Output:**
 
 ```
-🚀 RWAchain Complete Deployment
+🚀 EstateChain Marketplace Complete Deployment
 ================================
 
 ✅ Anvil started (PID: 12345)

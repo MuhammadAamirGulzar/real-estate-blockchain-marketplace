@@ -1,4 +1,4 @@
-# RWAChain Backend
+# EstateChain Marketplace Backend
 
 Node.js + Express based REST API server for the Real World Asset (RWA) tokenization platform.
 
@@ -251,4 +251,5 @@ See `docs/` folder for:
 
 ## License
 
-Part of RWAChain Platform
+Part of EstateChain Marketplace.
+Licensed under PolyForm Noncommercial License 1.0.0.

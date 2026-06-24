@@ -1,6 +1,6 @@
 # Environment Setup Guide
 
-This guide walks you through setting up the complete environment for the RWAchain multi-currency payment system.
+This guide walks you through setting up the complete environment for the EstateChain Marketplace multi-currency payment system.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ This guide walks you through setting up the complete environment for the RWAchai
 ```bash
 # Clone repository
 git clone <repository-url>
-cd RWAchain
+cd EstateChain Marketplace
 
 # Install backend dependencies
 cd backend
@@ -55,11 +55,11 @@ cp .env.example .env
 ```bash
 # Create PostgreSQL database
 psql -U postgres
-CREATE DATABASE rwachain_db;
+CREATE DATABASE estatechain-marketplace_db;
 \q
 
 # Update backend/.env with your database URL
-DATABASE_URL="postgresql://postgres:your_password@localhost:5432/rwachain_db"
+DATABASE_URL="postgresql://postgres:your_password@localhost:5432/estatechain-marketplace_db"
 
 # Run migrations
 cd backend
@@ -77,7 +77,7 @@ npm run migrate
 1. **Database**
 
    ```env
-   DATABASE_URL="postgresql://user:password@localhost:5432/rwachain_db"
+   DATABASE_URL="postgresql://user:password@localhost:5432/estatechain-marketplace_db"
    ```
 
 2. **JWT Secret** (Generate with: `openssl rand -base64 32`)
@@ -163,7 +163,7 @@ npm run migrate
    SMTP_PORT=587
    SMTP_USER="your-email@gmail.com"
    SMTP_PASS="your-app-password"
-   EMAIL_FROM="noreply@rwachain.com"
+   EMAIL_FROM="noreply@estatechain-marketplace.com"
    ```
 
    - Gmail: Enable 2FA → Generate App Password

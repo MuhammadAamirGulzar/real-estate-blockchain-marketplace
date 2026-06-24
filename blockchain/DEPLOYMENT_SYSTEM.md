@@ -2,7 +2,7 @@
 
 ## Overview
 
-Complete PowerShell-based deployment system for the RWAchain smart contracts. Supports automated deployment of all 11 contracts (9 main contracts + 3 payment system contracts) with full address management and backend synchronization.
+Complete PowerShell-based deployment system for the EstateChain Marketplace smart contracts. Supports automated deployment of all 11 contracts (9 main contracts + 3 payment system contracts) with full address management and backend synchronization.
 
 ---
 

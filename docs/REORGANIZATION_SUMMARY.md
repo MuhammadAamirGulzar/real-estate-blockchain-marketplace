@@ -1,8 +1,8 @@
-# RWAChain Reorganization Complete ✅
+# EstateChain Marketplace Reorganization Complete ✅
 
 ## Summary
 
-The RWAChain project has been successfully reorganized into a clean, modular structure with three independent sections: Frontend, Backend, and Blockchain.
+The EstateChain Marketplace project has been successfully reorganized into a clean, modular structure with three independent sections: Frontend, Backend, and Blockchain.
 
 ## What Changed
 
@@ -11,7 +11,7 @@ The RWAChain project has been successfully reorganized into a clean, modular str
 **Before:**
 
 ```
-RWAchain/
+EstateChain Marketplace/
 ├── src/ (frontend)
 ├── server/ (backend)
 ├── foundry/ (blockchain)
@@ -22,7 +22,7 @@ RWAchain/
 **After:**
 
 ```
-RWAchain/
+EstateChain Marketplace/
 ├── frontend/
 │   ├── src/
 │   ├── public/
@@ -281,7 +281,7 @@ git commit -m "feat(blockchain): support new contract"
 
 ## Summary
 
-Your RWAChain project is now **clean, organized, and scalable**. Each section (frontend, backend, blockchain) is completely independent with:
+Your EstateChain Marketplace project is now **clean, organized, and scalable**. Each section (frontend, backend, blockchain) is completely independent with:
 
 - Own dependencies management
 - Own environment configuration

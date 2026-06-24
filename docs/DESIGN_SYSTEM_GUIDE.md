@@ -1,4 +1,4 @@
-# 🎨 RWAchain Design System - Quick Reference
+# 🎨 EstateChain Marketplace Design System - Quick Reference
 
 ## Color Palette
 

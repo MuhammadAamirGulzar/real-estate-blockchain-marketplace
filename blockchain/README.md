@@ -1,4 +1,4 @@
-# RWAChain Blockchain
+# EstateChain Marketplace Blockchain
 
 Foundry-based Solidity smart contracts for the Real World Asset (RWA) tokenization platform.
 
@@ -354,4 +354,5 @@ For detailed contract documentation:
 
 ## License
 
-Part of RWAChain Platform
+Part of EstateChain Marketplace.
+Licensed under PolyForm Noncommercial License 1.0.0.

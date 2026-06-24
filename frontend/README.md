@@ -1,4 +1,4 @@
-# RWAChain Frontend
+# EstateChain Marketplace Frontend
 
 React + Vite based frontend application for the Real World Asset (RWA) tokenization platform.
 
@@ -131,4 +131,5 @@ See [../blockchain/README.md](../blockchain/README.md) for contract information.
 
 ## License
 
-Part of RWAChain Platform
+Part of EstateChain Marketplace.
+Licensed under PolyForm Noncommercial License 1.0.0.

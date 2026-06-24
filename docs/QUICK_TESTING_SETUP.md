@@ -43,7 +43,7 @@ Ensure `.env` file in root directory has these variables:
 
 ```env
 # Database
-DATABASE_URL=postgresql://postgres:password@localhost:5432/rwachain
+DATABASE_URL=postgresql://postgres:password@localhost:5432/estatechain-marketplace
 
 # JWT
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
@@ -108,7 +108,7 @@ Or manually in PostgreSQL:
 ```sql
 INSERT INTO users (email, password, name, role, walletAddress, kycStatus)
 VALUES (
-  'admin@rwachain.com',
+  'admin@estatechain-marketplace.com',
   '$2a$10$...',  -- bcrypt hash of 'Admin123!@#'
   'Admin User',
   'admin',
@@ -252,14 +252,14 @@ SELECT * FROM users WHERE email = 'test1@example.com';
 
 1. Go to `http://localhost:5173/login`
 2. Login:
-   - Email: `admin@rwachain.com`
+   - Email: `admin@estatechain-marketplace.com`
    - Password: `Admin123!@#`
 3. Should redirect to admin dashboard
 
 **Check Backend Logs:**
 
 ```
-✅ User logged in: admin@rwachain.com
+✅ User logged in: admin@estatechain-marketplace.com
 ```
 
 ---

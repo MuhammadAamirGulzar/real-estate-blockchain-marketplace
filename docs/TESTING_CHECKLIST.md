@@ -80,11 +80,11 @@ node scripts/create-test-users.js
 
 This creates:
 
-- `admin@rwachain.com` / `Admin123!@#` (admin)
-- `verifier@rwachain.com` / `Verifier123!@#` (verifier)
-- `user1@rwachain.com` / `User123!@#` (approved KYC)
-- `user2@rwachain.com` / `User123!@#` (pending KYC)
-- `user3@rwachain.com` / `User123!@#` (no KYC)
+- `admin@estatechain-marketplace.com` / `Admin123!@#` (admin)
+- `verifier@estatechain-marketplace.com` / `Verifier123!@#` (verifier)
+- `user1@estatechain-marketplace.com` / `User123!@#` (approved KYC)
+- `user2@estatechain-marketplace.com` / `User123!@#` (pending KYC)
+- `user3@estatechain-marketplace.com` / `User123!@#` (no KYC)
 
 **Grant blockchain roles:**
 

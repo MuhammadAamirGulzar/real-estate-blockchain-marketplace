@@ -1,6 +1,6 @@
-# RWAChain Platform
+# EstateChain Marketplace
 
-RWAChain is a full-stack Real World Asset tokenization platform for registering properties, verifying investors, issuing blockchain-backed ownership tokens, processing investments, and supporting secondary trading and revenue distribution.
+EstateChain Marketplace is a full-stack Real World Asset tokenization platform for registering properties, verifying investors, issuing blockchain-backed ownership tokens, processing investments, and supporting secondary trading and revenue distribution.
 
 ## Current Stack
 
@@ -14,7 +14,7 @@ RWAChain is a full-stack Real World Asset tokenization platform for registering 
 ## Repository Layout
 
 ```text
-RWAchain/
+EstateChainMarketplace/
 |-- frontend/              # React + Vite application
 |-- backend/               # Express API, services, database schema
 |-- backend/db/            # Drizzle schema, database connection, seed data
@@ -177,6 +177,15 @@ Never commit real `.env` files, private keys, JWT secrets, upload artifacts, or 
 - Treat all private keys as secrets. The sample Anvil key is only for local development.
 - Use HTTPS, strict CORS, and production database credentials in deployed environments.
 - Validate uploaded files and keep `backend/uploads/` outside Git.
+
+## Maintainer
+
+- Primary maintainer: `muhammadaamirgulzar` (@MuhammadAamirGulzar)
+
+## License
+
+This repository is licensed under the PolyForm Noncommercial License 1.0.0.
+Commercial use is not permitted without explicit written permission from the maintainer.
 
 ## Project Status
 
